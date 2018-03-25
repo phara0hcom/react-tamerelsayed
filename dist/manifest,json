@@ -1,0 +1,7 @@
+{
+    "name": "Tamer Elsayed Personal Website",
+    "short_name": "Tamer's Portfolio",
+    "start_url": ".",
+    "display": "fullscreen",
+    "background_color": "rgba(3, 7, 43, 0.8)"
+}
