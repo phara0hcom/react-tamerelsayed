@@ -19,6 +19,7 @@ Merge:
     - cd dist
     - sudo cp -a * ../
     - cd ..
+    - sudo rm -rf dist
     - sudo ls -l
     - sudo chmod -R 777 /home/gitlab-runner/builds
     # - sudo rm -rf .sass-cache
@@ -34,7 +35,6 @@ Deploy:
     # Replace with latest build
     - sudo chmod -R 777 /home/gitlab-runner/builds
     - sudo rm -rf /var/www/tamerelsayed.com/root/css
-    - sudo rm -rf /var/www/tamerelsayed.com/root/dist
     - sudo rm -rf /var/www/tamerelsayed.com/root/images
     - sudo rm -rf /var/www/tamerelsayed.com/root/index.html
     - sudo cp -a * /var/www/tamerelsayed.com/root/
