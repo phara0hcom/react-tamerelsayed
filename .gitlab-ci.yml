@@ -8,16 +8,17 @@ Merge:
     # - whoami
 
     # # View changes and remove .git
+    - sudo chmod -R 777 /home/gitlab-runner/builds
     - sudo rm -rf .git
     - sudo rm -rf src
     - sudo rm -rf .babelrc
     - sudo rm -rf postcss.config.js
     - sudo rm -rf webpack.config
-    # - sudo rm -rf sass/
     - sudo rm -rf package-lock.json
     - sudo rm -rf package.json
-    # - sudo rm -rf tempcss/
+    - sudo cp -a dist/* /
     - sudo ls -l
+    - sudo chmod -R 777 /home/gitlab-runner/builds
     # - sudo rm -rf .sass-cache
   artifacts:
     untracked: true
@@ -29,7 +30,9 @@ Deploy:
   when: on_success
   script:
     # Replace with latest build
+    - sudo chmod -R 777 /home/gitlab-runner/builds
     - sudo rm -rf /var/www/tamerelsayed.com/root/css
+    - sudo rm -rf /var/www/tamerelsayed.com/root/dist
     - sudo rm -rf /var/www/tamerelsayed.com/root/images
     - sudo rm -rf /var/www/tamerelsayed.com/root/index.html
     - sudo cp -a * /var/www/tamerelsayed.com/root/
