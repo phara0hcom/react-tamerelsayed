@@ -13,10 +13,12 @@ Merge:
     - sudo rm -rf src
     - sudo rm -rf .babelrc
     - sudo rm -rf postcss.config.js
-    - sudo rm -rf webpack.config
+    - sudo rm -rf webpack.config.js
     - sudo rm -rf package-lock.json
     - sudo rm -rf package.json
-    - sudo cp -a dist/* /
+    - cd dist
+    - sudo cp -a * ../
+    - cd ..
     - sudo ls -l
     - sudo chmod -R 777 /home/gitlab-runner/builds
     # - sudo rm -rf .sass-cache
