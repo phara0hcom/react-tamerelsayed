@@ -87,6 +87,13 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(pdf)$/,
+                loader: "file-loader",
+                options: {
+                    name: "cv/[name].[ext]"
+                }
             }
         ]
     },

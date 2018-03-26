@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Tamer Elsayed - Web-Designer / Web-Developer, Portfolio">
-    <title>React and Webpack4</title>
+    <title>Tamer Elsayed - Web-Designer / Web-Developer</title>
     <meta name="theme-color" content="#03072b" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <meta property="og:type" content="WebApp">
     <meta property="og:site_name" content="Tamer Elsayed - Web-Designer">
@@ -15,10 +16,106 @@
     <meta property="og:url" content="">
     <meta property="og:description" content="About Tamer Elsayed, Portfolio">
     <meta property="og:image" content="">
+    <style type="text/css">
+        .spinner {
+            margin: 100px auto;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .spinner > div {
+            background-color: #333;
+            height: 100%;
+            width: 6px;
+            display: inline-block;
+            
+            -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        }
+
+        .spinner .rect2 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+
+        .spinner .rect3 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        .spinner .rect4 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .spinner .rect5 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+
+        @-webkit-keyframes sk-stretchdelay {
+            0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+            20% { -webkit-transform: scaleY(1.0) }
+        }
+
+        @keyframes sk-stretchdelay {
+            0%, 40%, 100% { 
+                transform: scaleY(0.4);
+                -webkit-transform: scaleY(0.4);
+            }  20% { 
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+        
+        .loader {
+            text-align: center;
+            font-family: sans-serif;
+            opacity: 0;
+            -webkit-animation: loadfail .2s 5s linear;
+            -webkit-animation-fill-mode:forwards;
+            -webkit-animation-iteration-count: 1;
+            animation: loadfail .2s 5s linear;
+            animation-fill-mode:forwards;
+            animation-iteration-count: 1;
+        }
+
+        @-webkit-keyframes loadfail {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes loadfail {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <section id="index">Please activate JavaScript</section>
+
+    <section id="index">
+        <h1 class="loader">Please activate JavaScript</h1>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </section>
 </body>
 
 </html>

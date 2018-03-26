@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { MySkills } from "./skills"
 import svgSprite from "../../images/sprite.svg";
 
@@ -15,12 +15,15 @@ const createSkillList = (data, i) => {
         </div>
     )
 }
-const Skills = (props) => {
-    return <section className="section-skills">
+
+export default class Skills extends Component {
+    render() {
+        return (
+            <section className="section-skills">
                 <div className="row skills">
                     { MySkills.map( (data, i) => createSkillList(data, i) ) }
                 </div>
-            </section>;
-
-};
-export default Skills;
+            </section>
+        )
+    }
+}
