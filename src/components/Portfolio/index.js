@@ -5,7 +5,7 @@ import { portfolioItems } from "./portfolioItems"
 export default class Portfolio extends Component {
     render() {
         return (
-            <section className="section-portfolio">
+            <section className="section-portfolio" id="section-portfolio">
                 <ImageGallery items={portfolioItems} />
             </section>
         )

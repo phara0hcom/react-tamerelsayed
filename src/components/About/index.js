@@ -27,11 +27,29 @@ export default class About extends Component {
                     </div>
                     <div className="col-1-of-2">
                         <div className="composition">
-                            <img srcSet={`${about_3__small} 300w,${about_3} 1000w`} src={about_3} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" className="composition__photo composition__photo--p1" />
+                            <img 
+                                srcSet={`${about_3__small} 300w,${about_3} 1000w`}
+                                src={about_3}
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 3"
+                                className="composition__photo composition__photo--p1"
+                            />
 
-                            <img srcSet={`${about_2__small} 300w,${about_2} 1000w`} src={about_2} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" className="composition__photo composition__photo--p2" />
+                            <img 
+                                srcSet={`${about_2__small} 300w,${about_2} 1000w`}
+                                src={about_2}
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 2"
+                                className="composition__photo composition__photo--p2"
+                            />
 
-                            <img srcSet={`${about_1__small} 300w,${about_1} 1000w`} src={about_1} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" className="composition__photo composition__photo--p3" />
+                            <img
+                                srcSet={`${about_1__small} 300w,${about_1} 1000w`}
+                                src={about_1}
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 1"
+                                className="composition__photo composition__photo--p3"
+                            />
                         </div>
                     </div>
                 </div>

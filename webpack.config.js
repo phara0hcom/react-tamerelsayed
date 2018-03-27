@@ -2,7 +2,17 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
     template: "./src/index.html",
-    filename: "./index.html"
+    filename: "./index.html",
+    favicon: "./src/images/favicon.png",
+    title: "Tamer Elsayed - Web-Designer / Web-Developer",
+    minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        html5: true,
+        minifyCSS: true,
+        removeComments: true,
+        removeEmptyAttributes: true
+    }
 });
 
 module.exports = {
@@ -25,31 +35,34 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
                     "file-loader?context=src/images/&name=images/[path][name].[ext]",
                     {
-                        // images loader
-                        loader: "image-webpack-loader",
-                        query: {
+                        loader: 'image-webpack-loader',
+                        options: {
                             mozjpeg: {
-                                progressive: true
+                                progressive: true,
+                                quality: 65
                             },
-                            gifsicle: {
-                                interlaced: false
-                            },
+                            // optipng.enabled: false will disable optipng
                             optipng: {
-                                optimizationLevel: 4
+                                enabled: false,
                             },
                             pngquant: {
-                                quality: "75-90",
-                                speed: 3
+                                quality: '65-90',
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
                             }
                         }
-                    }
+                    },
                 ],
-                exclude: /node_modules/,
-                include: __dirname
             },
             {
                 test: /\.eot(\?v=\d+.\d+.\d+)?$/,

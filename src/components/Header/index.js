@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-import logoWhite from "../../images/logo-white.png";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import logoRound_150 from "../../images/Round_logo_150x150.png";
+import logoRound_250 from "../../images/Round_logo_250x250.png";
 
 export default class Header extends Component {
     render() {
         return (
             <header className="header">
                 <div className="header__logo-box">
-                    <img src={logoWhite} alt="Logo" className="header__logo" />
+                    <img 
+                        src={logoRound_250}  
+                        alt="Logo"
+                        srcSet={`${logoRound_150} 150w,${logoRound_250} 250w`}
+                        sizes="(max-width: 75em) 2vw, (max-width: 37.5em) 2vw, 45px"
+                        className="header__logo" 
+                    />
                 </div>
                 <div className="header__text-box">
                     <h1 className="heading-primary">
@@ -21,9 +29,9 @@ export default class Header extends Component {
                         </span>
                     </h1>
 
-                    <a href="#section-about" className="btn btn--white btn--animated">
+                    <AnchorLink href="#section-about" className="btn btn--white btn--animated">
                         About me
-                    </a>
+                    </AnchorLink>
                 </div>
             </header>
         )

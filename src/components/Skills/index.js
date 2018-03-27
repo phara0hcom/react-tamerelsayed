@@ -19,7 +19,12 @@ const createSkillList = (data, i) => {
 export default class Skills extends Component {
     render() {
         return (
-            <section className="section-skills">
+            <section className="section-skills" id="section-skills">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary heading-secondary-white">
+                        My Skills
+                    </h2>
+                </div>
                 <div className="row skills">
                     { MySkills.map( (data, i) => createSkillList(data, i) ) }
                 </div>
