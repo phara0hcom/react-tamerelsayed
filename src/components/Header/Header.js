@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logoRound_150 from "../../images/Round_logo_150x150.png";
 import logoRound_250 from "../../images/Round_logo_250x250.png";
 
-export default class Header extends Component {
-    render() {
+const Header = () => {
+
         return (
             <header className="header">
                 <div className="header__logo-box">
@@ -35,5 +35,7 @@ export default class Header extends Component {
                 </div>
             </header>
         )
-    }
+    
 }
+
+export default Header;

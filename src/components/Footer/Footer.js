@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logoRound_150 from "../../images/Round_logo_150x150.png";
 import logoRound_250 from "../../images/Round_logo_250x250.png";
 import logoFull_x1 from "../../images/full_logo_x1.png";
 import logoFull_x2 from "../../images/full_logo_x2.png";
 
-export default class Footer extends Component {
-    render() {
+const Footer = () => {
+
         return (
             <footer className="footer" id="section-contact">
                 <picture className="footer__logo">
@@ -36,5 +36,7 @@ export default class Footer extends Component {
                 </div>
             </footer>
         )
-    }
+    
 }
+
+export default Footer;

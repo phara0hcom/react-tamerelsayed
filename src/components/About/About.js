@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import logoWhite from "../../images/logo-white.png";
 import about_1 from "../../images/about_1.jpg";
 import about_1__small from "../../images/about_1-small.jpg";
@@ -8,8 +8,8 @@ import about_3 from "../../images/about_3.jpg";
 import about_3__small from "../../images/about_3-small.jpg";
 import my_CV from '../../cv/Tamer.Elsayed_CV.pdf';
 
-export default class About extends Component {
-    render() {
+const About = () => {
+
         return (
             <section className="section-about" id="section-about">
                 <div className="u-center-text u-margin-bottom-big">
@@ -55,5 +55,6 @@ export default class About extends Component {
                 </div>
             </section>
         )
-    }
 }
+
+export default About;
