@@ -11,7 +11,7 @@ const Footer = () => {
             <footer className="footer" id="section-contact">
                 <picture className="footer__logo">
                     <source 
-                        srcset={`${logoRound_150} 1x, ${logoRound_250} 2x`}
+                        srcSet={`${logoRound_150} 1x, ${logoRound_250} 2x`}
                         media="( max-width: 37.5em )"
                     />
                     <img
@@ -21,6 +21,13 @@ const Footer = () => {
                         src={logoFull_x2}
                     />
                 </picture>
+                <div className="footer__social">
+                    <ul className="footer__list">
+                        <li className="footer__item">
+                            <a href="" target="_blank" ></a>
+                        </li>
+                    </ul>
+                </div>
                 <div className="footer__navigation">
                     <ul className="footer__list">
                         <li className="footer__item">

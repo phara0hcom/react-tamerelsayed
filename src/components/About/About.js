@@ -17,8 +17,8 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Graphics Designer turned Web Designer</h3>
-                        <p class="paragraph">
+                    <h3 className="heading-tertiary u-margin-bottom-small">Graphics Designer turned Web Designer</h3>
+                        <p className="paragraph">
                             Even earlier in life I was always interested in technology and the web, but I started my career as a salesman. But after a few years I was unhappy with my trajectory. On my own I started learning Illustrator and Photoshop and got the opportunity at Dell to switch up my career. To improve more I also went back to school and started to work at Creative Clicks since they had more possibilities for me to grow and become a Web-Designer. During my career as a whole I always tried to improve my knowledge. And since I feel I outgrew my role within Creative Clicks I'm looking for my next challenge.
                         </p>
                         <a href={my_CV} className="btn-text">

@@ -20,8 +20,8 @@ const Skills = () => {
 
     return (
         <section className="section-skills" id="section-skills">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary heading-secondary-white">
+            <div className="u-center-text u-margin-bottom-big">
+                <h2 className="heading-secondary heading-secondary-white">
                     My Skills
                 </h2>
             </div>
